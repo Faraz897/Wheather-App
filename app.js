@@ -18,26 +18,26 @@ async function checkwheather(city){
     document.querySelector('.humidity').innerHTML = data.main.humidity + '%'
     document.querySelector('.Wind').innerHTML = data.wind.speed + 'km/h'
 
-    if(data.weather[0].main == 'clouds'){
+    if(data.weather[0].main == 'Clouds'){
         weathericon.src = './clouds.png';
     }
-    else if(data.weather[0].main == 'clear'){
+    else if(data.weather[0].main == 'Clear'){
         weathericon.src = './clear.png';
     }
 
-    else if(data.weather[0].main == 'rain'){
+    else if(data.weather[0].main == 'Rain'){
         weathericon.src = './rain.png';
     }
 
-    else if(data.weather[0].main == 'drizzle'){
+    else if(data.weather[0].main == 'Drizzle'){
         weathericon.src = './drizzle.png';
     }
 
-    else if(data.weather[0].main == 'mist'){
+    else if(data.weather[0].main == 'Mist'){
         weathericon.src = './mist.png';
     }
 
-    else if(data.weather[0].main == 'snow'){
+    else if(data.weather[0].main == 'Snow'){
         weathericon.src = './snow.png';
     }
 
