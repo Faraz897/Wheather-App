@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', 'sans-serif';
@@ -98,4 +98,148 @@ body{
     font-size: 20px;
     margin-top: -6px;
 
+} */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 25px;
+}
+
+.temp {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 1.2rem;
+    margin-top: -6px;
+}
+
+@media (max-width: 600px) {
+    .search input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .search button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .city {
+        font-size: 1.5rem;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col {
+        margin-bottom: 10px;
+    }
+
+    .col img {
+        width: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 1rem;
+    }
 }
